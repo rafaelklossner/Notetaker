@@ -5,12 +5,12 @@ import os
 print("---------- NoteTaker ----------")
 
 parser = argparse.ArgumentParser(description='Notetaker')
+parser.add_argument('-f','--file', default='demoFileName', help='Name of the file', required=True)
 parser.add_argument('--header', action='store_true')
 args = vars(parser.parse_args())
-print(args["header"])
 
-print("Enter file name: ")
-file_name = input()
+file_name = args["file"]
+print("Open file " + args["file"])
 
 if not os.path.isfile(file_name + ".md"):
     file = open(file_name + ".md", "w")
