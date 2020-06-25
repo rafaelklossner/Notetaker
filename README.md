@@ -5,7 +5,7 @@ The Notetaker is an easy to use command line note taking application written in 
 ## Usage
 
 ```
-py Notetaker.py --file "FileName" --header
+py Notetaker.py --file FileName --header
 ```
 
 ## Configuration
